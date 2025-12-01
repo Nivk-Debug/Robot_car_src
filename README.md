@@ -6,7 +6,7 @@ Video del proyecto:
 
 ---
 
-##  Estructura entregada
+## 📦 Estructura entregada
 src/
 └── robot_car_ros/
 ├── package.xml
@@ -23,21 +23,24 @@ Copy code
 
 ---
 
-#  Requisitos previos
+# 📌 Requisitos previos
 ### ROS2 Humble / Foxy / Jazzy instalado en Linux  
 Guía oficial: https://docs.ros.org/
+
 ### Python 3
+
 ### Carro físico (no incluido en esta entrega):
 - ESP8266 (NodeMCU)
 - Firmware que recibe comandos F/B/L/R/S por TCP puerto 4210
-- Envío de distancia con formato DIST:<valor_en_cm>
+- Envío de distancia con formato `DIST:<valor_en_cm>`
 
 El PC y el ESP8266 deben estar en la misma red WiFi.
 
 ---
 
-#  Instalación del paquete ROS2
-Copiar la carpeta robot_car_ros dentro del src/ del workspace ROS2 del usuario:
+# 🚀 Instalación del paquete ROS2
+Copiar la carpeta `robot_car_ros` dentro del `src/` del workspace ROS2 del usuario:
+
 ```bash
 cd ~/ros2_ws/src
 # colocar aquí la carpeta robot_car_ros
@@ -48,7 +51,7 @@ Copy code
 cd ~/ros2_ws
 colcon build
 source install/setup.bash
-▶ Ejecución del nodo ROS2
+▶️ Ejecución del nodo ROS2
 Lanzar el nodo puente (TCP → ROS2):
 
 bash
@@ -59,7 +62,7 @@ Ejemplo:
 bash
 Copy code
 ros2 run robot_car_ros car_bridge_node --ros-args -p car_ip:=192.168.4.1
- Tópicos ROS2 del proyecto
+📡 Tópicos ROS2 del proyecto
 1. Enviar comandos al carro
 bash
 Copy code
@@ -86,6 +89,13 @@ data: 23.4
 data: 21.8
 ---
 data: 25.0
- Autor
-Nicholas Ruiz Zhilkin
+👤 Autor
+nick-zh
 Correo: nichoruizhilkin@gmail.com
+
+yaml
+Copy code
+
+---
+
+Si lo quieres también en versión “limpia” sin emojis, dímelo y te lo dejo igual pero totalmente plano.
